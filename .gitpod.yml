@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      yes | sdkmanager --licenses
+      sdkmanager "platform-tools" "platforms;android-26" "build-tools;29.0.3"
+    command: |
+      echo "Android SDK Ready"
